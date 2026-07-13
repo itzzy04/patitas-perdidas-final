@@ -19,7 +19,7 @@ function App() {
 
             <div className="header-centro">
               <img
-                src="/logo.png"
+                src="logo.png"
                 alt="Patitas Perdidas"
                 className="logo"
               />
