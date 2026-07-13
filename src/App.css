@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fondo: #EAD5BF;
+  --fondo-card: #f5e6d3;
+  --fondo-contenedor: #f6ebde;
+  --texto: #5C4033;
+  --sombra: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  background-color: var(--fondo);
+  font-family: Arial, sans-serif;
+  color: var(--texto);
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+}
+
+/* ========================= */
+/* FRANJA SUPERIOR */
+/* ========================= */
+
+.franja-superior {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--fondo-contenedor);
+  min-height: 100vh;
+  padding: 35px 40px;
+}
+
+.contenido-superior {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5px 20px 45px;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  position: relative;
+}
+
+.header-datos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header-centro {
+  justify-self: center;
+}
+
+.logo {
+  max-width: 400px;
+  display: block;
+  margin: 0 auto 35px;
+}
+
+/* ========================= */
+/* TARJETAS CLIMA */
+/* ========================= */
+
+.card-dato {
+  background-color: var(--fondo-card);
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+  padding: 10px 16px;
+  min-width: 180px;
+  text-align: center;
+  border:1px solid #e7d1bc;
+}
+
+.card-dato h2 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.card-dato p {
+  font-size: 13px;
+  margin: 3px 0;
+}
+
+/* ========================= */
+/* CONTENIDO */
+/* ========================= */
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.formulario {
+  padding: 20px 0;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.campo label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.campo input {
+  padding: 9px 12px;
+  border: 1.5px solid #c9a07a;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  color: var(--texto);
+}
+.campo input:focus{
+    outline:none;
+    border-color:#8B5E3C;
+    box-shadow:0 0 0 3px rgba(139,94,60,.15);
+}
+.error{
+    color:#b23a2e;
+    font-size:13px;
+    margin-top:4px;
+    min-height:16px;
+    font-weight:500;
+}
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--texto);
+  color: var(--fondo);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+  transition:.2s;
+}
+
+.btn:hover{
+    background:#7a543c;
+}
+
+/* ========================= */
+/* BITÁCORA */
+/* ========================= */
+
+.bitacora-item {
+  background-color: var(--fondo);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+}
+.bitacora-botones {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.btn-editar {
+  padding: 8px 16px;
+  background-color: #8B5E3C;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-eliminar {
+  padding: 8px 16px;
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-editar,
+.btn-eliminar {
+  transition: .2s;
+}
+
+.btn-editar:hover,
+.btn-eliminar:hover {
+  transform: translateY(-1px);
+}
+
+.seccion-formulario h2,
+.seccion-bitacora h2{
+    color:var(--texto);
+    margin-bottom:16px;
+    transition:.2s;
+}
+.seccion-formulario:hover,
+.seccion-bitacora:hover{
+
+    border-color:#c8a37d;
+
+}
+.seccion-formulario h2,
+.seccion-bitacora h2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.seccion-formulario h2::before,
+.seccion-formulario h2::after,
+.seccion-bitacora h2::before,
+.seccion-bitacora h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #d7b998;
+}

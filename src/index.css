@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fondo: #EAD5BF;
+  --fondo-card: #f5e6d3;
+  --texto: #5C4033;
+  --sombra: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  background-color: var(--fondo);
+  font-family: Arial, sans-serif;
+  color: var(--texto);
+}
+
+h1, h2, h3 {
+  color: var(--texto);
+}
