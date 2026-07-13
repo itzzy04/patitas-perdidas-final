@@ -57,7 +57,7 @@ body {
   flex-direction: column;
   gap: 12px;
   position: absolute;
-  top: 0;
+  top: -5px;
   right: 0;
 }
 
